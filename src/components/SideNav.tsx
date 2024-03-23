@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 function SideNav() {
   return (
     <div>
       {/* Main Sidebar Container */}
       <aside className="main-sidebar sidebar-dark-primary elevation-4" style={{ position: 'fixed' }}>
         {/* Brand Logo */}
-        <a href="#" className="brand-link">
+        <Link to="/" className="brand-link">
           <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
           <span className="brand-text font-weight-light">SBU</span>
-        </a>
+        </Link>
         {/* Sidebar */}
         <div className="sidebar">
           {/* Sidebar user panel (optional) */}
@@ -38,28 +40,28 @@ function SideNav() {
 
               <li className="nav-header">Menu</li>
               <li className="nav-item">
-                <a href="pages/calendar.html" className="nav-link">
+                <Link to="/" className="nav-link">
                   <i className="nav-icon ion ion-pie-graph" />
                   <p>
                       Dashboard
                   </p>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="pages/calendar.html" className="nav-link">
+                <Link to="ProductManagement" className="nav-link">
                   <i className="nav-icon ion ion-clipboard" />
                   <p>
                       จัดการข้อมูลทรัพย์สิน
                   </p>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="pages/gallery.html" className="nav-link">
+                <Link to="UserManagement" className="nav-link">
                   <i className="nav-icon ion ion-person-add" />
                   <p>
                     จัดการข้อมูลผู้ใช้
                   </p>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
